@@ -40,13 +40,13 @@ if not os.environ.get("API_KEY"):
     raise RuntimeError("API_KEY not set")
 
 @app.route("/")
-# @login_required
+@login_required
 def index():
     # """ABOUT PAGE"""
     return render_template("index.html")
 
 @app.route("/create", methods=["GET", "POST"])
-# @login_required
+@login_required
 def create():
 #     # """Create a QR code"""
 #     # """If by get, then just display the boxes: qr destination and desired name."""
@@ -79,7 +79,7 @@ def create():
 
 
 @app.route("/mycodes", methods=["GET", "POST"])
-# @login_required
+@login_required
 def mycodes():
     if request.method == "GET":
         codes = db.execute("SELECT * FROM mycodes WHERE id = ?", session["user_id"])
@@ -98,7 +98,7 @@ def mycodes():
 
 
 @app.route("/delete", methods=["GET", "POST"])
-# @login_required
+@login_required
 def delete():
     # """ If by get, display dropbar containing qr codes owned by user"""
     # """ if by post, delete the qr code from the database. """
