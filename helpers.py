@@ -27,7 +27,7 @@ def login_required(f):
     def decorated_function(*args, **kwargs):
         userID = session.get("user_id")
         userUSERNAME = session.get("username")
-        if userID and userUSERNAME is None:
+        if userID is None and userUSERNAME is None:
             return redirect("/login")
         return f(*args, **kwargs)
     return decorated_function
