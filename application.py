@@ -35,19 +35,15 @@ Session(app)
 # Configure CS50 Library to use SQL database
 db = SQL(os.getenv("DATABASE_URL"))
 
-current_user_id = session.get("user_id")
-
 # Make sure API key is set
 if not os.environ.get("API_KEY"):
     raise RuntimeError("API_KEY not set")
 
 @app.route("/")
+@login_required
 def index():
-    if current_user_id == None:
-        return render_template("login.html")
     # """ABOUT PAGE"""
-    else:
-        return render_template("index.html")
+    return render_template("index.html")
 
 @app.route("/create", methods=["GET", "POST"])
 @login_required
