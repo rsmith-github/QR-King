@@ -9,6 +9,7 @@ from werkzeug.exceptions import default_exceptions, HTTPException, InternalServe
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from helpers import apology, login_required
+from validator_collection import validators, checkers
 
 
 
@@ -57,6 +58,12 @@ def create():
         link = request.form.get('link')
         name = request.form.get("codename")
         mycodes = db.execute("SELECT codename FROM mycodes WHERE id = ?", session["user_id"])
+        # Check if valid url
+        if checkers.is_url(link) is False:
+            flash("Please provide a valid URL.", "error")
+            return False
+
+
 
         # If user doesn't return input, return apology.
         if request.form.get('link') == '' or request.form.get('codename') == '':
