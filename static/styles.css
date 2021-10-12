@@ -24,6 +24,9 @@ main
 
     /* center contents */
     text-align: center;
+
+    /* add margin */
+    margin-top: 5%;
 }
 
 main img
