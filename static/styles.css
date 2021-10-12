@@ -115,7 +115,7 @@ main table {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
-  height: 300px;
+  height: 45%;
   background: #111845a6;
   box-sizing: border-box;
   overflow: hidden;
