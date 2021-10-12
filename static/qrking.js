@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    let linkForm = document.querySelector(".link");
+    let linkForm = document.querySelector("#link");
     linkForm.onsubmit = function() {
         let alert = document.querySelector('.alert')
         if (alert.innerHTML.includes("URL")) {
