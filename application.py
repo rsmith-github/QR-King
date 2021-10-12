@@ -61,7 +61,7 @@ def create():
         # Check if valid url
         if checkers.is_url(link) is False:
             flash("Please provide a valid URL.", "error")
-            return False
+            return redirect("/create")
 
 
 
