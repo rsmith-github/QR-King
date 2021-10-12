@@ -9,5 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
             alert.style.border = "none";
             alert.classList.remove(".border");
         }
+        return false;
     }
 });
