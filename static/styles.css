@@ -19,11 +19,13 @@ main .form-control
 
 main
 {
-    /* scroll horizontally as needed */
-    overflow-x: auto;
+    /* Center everything */
+    display: flex;
+    justify-content: center;
 
-    /* center contents */
-    text-align: center;
+    /* No horizontal scrolling */
+    overflow-x: hidden;
+    
 }
 
 main img
