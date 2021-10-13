@@ -227,5 +227,7 @@ main table {
 }
 
 .error {
-  color: #ED4337;
+  background-color: "#ED4337";
+  color: "white";
+  border: "none";
 }

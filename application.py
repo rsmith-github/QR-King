@@ -60,7 +60,7 @@ def create():
         mycodes = db.execute("SELECT codename FROM mycodes WHERE id = ?", session["user_id"])
         # Check if valid url
         if checkers.is_url(link) is False:
-            flash("Please provide a valid URL.", "error")
+            flash("Please provide a valid URL.")
             return redirect("/create")
 
 
