@@ -74,7 +74,7 @@ def create():
             # loop over the list of codes
             for i in range(len(mycodes)):
                 # if the name has been used already
-                if name in mycodes[i]["codename"]:
+                if name == mycodes[i]["codename"]:
                     # return an apology message
                     return apology("qr name already exists")
     # Else just insert the new qr code details.
