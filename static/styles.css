@@ -411,7 +411,8 @@ body {
 @media (max-width: 890px) {
 
   .create-box {
-    margin-top: 25%;
+    margin-top: 50%;
+    width: 95%;
   }
 
 }
