@@ -27,6 +27,8 @@ main
 
     /* add margin */
     margin-top: 5%;
+
+    height: 100%;
 }
 
 main img
@@ -83,7 +85,7 @@ html, body {
 }
 
 body {
-  background: transparent
+  background: transparent;
 }
 
 .footer {
@@ -411,8 +413,12 @@ body {
 @media (max-width: 890px) {
 
   .create-box {
-    margin-top: 50%;
-    width: 95%;
+    margin-top: 60%;
+    width: 98%;
+  }
+
+  .index-headline {
+    font-size: 28px;
   }
 
 }
