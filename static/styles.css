@@ -73,9 +73,11 @@ main table {
   color: red;
 }
 
-/*body {*/
-/*  background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');*/
-/*}*/
+body {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
 
 .footer {
     text-align: center;
@@ -97,7 +99,7 @@ main table {
 
 
 /*styles for about page*/
-/*Reference & credits to: https://codepen.io/uiswarup/pen/RBByzW*/
+/* Reference & credits to: https://codepen.io/uiswarup/pen/RBByzW*/
 
 .background-img{
 
@@ -236,7 +238,7 @@ main table {
 
 /* Cool new create form */
 .create-box {
-  margin-top: 25%;
+  margin-top: 18%;
   position: relative;
   top: 50%;
   left: 50%;
