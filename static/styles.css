@@ -99,16 +99,6 @@ body {
 /*styles for about page*/
 /* Reference & credits to: https://codepen.io/uiswarup/pen/RBByzW*/
 
-.background-img{
-
-  height: 400px;
-  width: 800px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 5% auto;
-  position: relative;
-}
-
 .content h2{ font-size:19px;}
 
 .box{
