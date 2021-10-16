@@ -386,3 +386,12 @@ body {
     bottom: 100%;
   }
 }
+
+.index-headline {
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -.003em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  text-decoration: none;
+}
