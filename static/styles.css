@@ -74,9 +74,7 @@ main table {
 }
 
 body {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background: linear-gradient(#141e30, #243b55);
 }
 
 .footer {
