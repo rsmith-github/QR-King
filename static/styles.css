@@ -239,7 +239,6 @@ body {
 
 /* Cool new create form */
 .create-box {
-  margin-top: -40%;
   position: relative;
   top: 50%;
   left: 50%;
@@ -414,9 +413,6 @@ body {
 /* mobile */
 @media (max-width: 890px) {
 
-  .create-box {
-    width: 100%;
-  }
   .index-headline {
     font-size: 28px;
   }
