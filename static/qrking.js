@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var loc = window.location.href; // returns the full URL
     if(/login/.test(loc)) {
-        document.querySelector("main").style("marginTop", "10%")
+        document.querySelector("main").style.marginTop = "10px";
       }
 
 });
