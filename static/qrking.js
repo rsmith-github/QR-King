@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // }
 
     var loc = window.location.href; // returns the full URL
-    if(/login/.test(loc)) {
-        document.querySelector("main").style.marginTop = "10px";
+    if(/login/.test(loc) || /register/.test(loc) || loc === "https://qrking.herokuapp.com") {
+        document.querySelector("main").style.marginTop = "10%";
       }
 
 });
