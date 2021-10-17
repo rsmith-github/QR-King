@@ -157,7 +157,7 @@ body {
   padding:20px;
   text-align:center;
   box-shadow: 0 5px 10px rgba(0,0,0,0.5);
-  
+
 }
 
 .box span{
@@ -414,8 +414,8 @@ body {
 @media (max-width: 890px) {
 
   .create-box {
-    margin-top: 55%;
-    width: 98%;
+    margin-top: 30%;
+    width: 99%;
   }
 
   .index-headline {
