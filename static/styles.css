@@ -239,11 +239,11 @@ body {
 
 /* Cool new create form */
 .create-box {
-  margin-top: 18%;
+  margin-top: -40%;
   position: relative;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 400px;
   height:400px;
   padding: 40px;
   transform: translate(-50%, -50%);
@@ -414,6 +414,9 @@ body {
 /* mobile */
 @media (max-width: 890px) {
 
+  .create-box {
+    width: 100%;
+  }
   .index-headline {
     font-size: 28px;
   }
