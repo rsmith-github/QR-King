@@ -414,8 +414,8 @@ body {
 @media (max-width: 890px) {
 
   .create-box {
-    margin-top: 30%;
-    width: 99%;
+    margin-top: 10%;
+    width: 100%;
   }
 
   .index-headline {
