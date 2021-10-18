@@ -27,15 +27,8 @@
         </button>
       </form>
     </div>
+  {% if alert == 1 %}
+    <footer class="hidden_footer" style="visibility: hidden;">alert<footer>
+  {% endif %}
 
 {% endblock %}
-
-{% if alert == 1 %}
-{% block scripts %}
-  <script>
-  function myFunction() {
-    alert("Please provide valid URL");
-  }
-  </script>
-{% endblock scripts %}
-{% endif %}
