@@ -406,7 +406,7 @@ body {
 
 
 /* mobile */
-@media (max-width: 890px) {
+@media (max-width: 790px) {
 
   .create-box {
     margin-top: 70%;

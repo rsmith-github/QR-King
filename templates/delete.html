@@ -19,4 +19,17 @@
         <!--Upon submission I should delete the qr code from my database!-->
         <button class="btn btn-primary" type="submit">Delete</button>
     </form>
+
+
+
+    <form action="/delete" method="post" class="display_and_delete" style="visibility: hidden;">
+        <div class="input-group">
+            <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                {% for cod in codes %}
+                    <option>{{ cod.codename }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button class="btn btn-outline-secondary" type="button">Button</button>
+    </form>
 {% endblock %}
