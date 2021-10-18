@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
     //   add margin to index page
-    document.querySelector(".index-headline").parentElement.style.marginTop = "15%";
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      document.querySelector(".index-headline").parentElement.style.marginTop = "40%";
+    } else {
+      document.querySelector(".index-headline").parentElement.style.marginTop = "15%";
+    }
 
 });
