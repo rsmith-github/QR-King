@@ -13,14 +13,5 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     document.querySelector(".index-headline").parentElement.style.marginTop = "15%";
   }
-
-  if (document.querySelector('.alert')) {
-    let alert = document.querySelector('.alert')
-    if (alert.innerHTML.includes("URL")) {
-      alert.style.backgroundColor = "#ED4337";
-      alert.style.color = "white";
-      alert.style.border = "none";
-    }
-  }
   
 });
