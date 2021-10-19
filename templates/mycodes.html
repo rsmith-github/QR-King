@@ -7,11 +7,11 @@
 {% block main %}
     <form action="/mycodes" method="post" class="display_and_delete">
         <div class="form-group">
-            <select class="form-control" name="codes">
+            <select class="form-control">
                 <option disabled selected value="">Select QR code</option>
                     <!--the contents of this for loop should be a list of my qr codes. coming from the database.-->
                     {% for cod in codes %}
-                        <option>{{ cod.codename }}</option>
+                        <option name="codes">{{ cod.codename }}</option>
                     {% endfor %}
             </select>
         </div>
