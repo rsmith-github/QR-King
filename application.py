@@ -92,10 +92,8 @@ def mycodes():
         codes = db.execute("SELECT * FROM mycodes WHERE id = ?", session["user_id"])
         return render_template("mycodes.html", codes=codes)
     else:
-        # user's selected qrcode (from dropdown)
-        code_selected = request.form.get("codes")
         # store the link provided by user in variable
-        link = db.execute("SELECT link FROM mycodes WHERE id = ? AND codename = ?", session["user_id"], code_selected)
+        link = db.execute("SELECT link FROM mycodes WHERE id = ? AND codename = ?", session["user_id"], request.form.get("codes"))
         # make qrqode
         img = qrcode.make(link)
         # save qrcode as png in static folder
