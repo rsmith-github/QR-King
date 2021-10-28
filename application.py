@@ -12,6 +12,8 @@ from helpers import apology, login_required
 from validator_collection import checkers
 
 
+# Fonfigure qrcodes folder in static
+CODES_FOLDER = os.path.join('static', 'codes')
 
 # Configure application
 app = Flask(__name__)
@@ -97,8 +99,9 @@ def mycodes():
         # make qrqode
         img = qrcode.make(link)
         # save qrcode as png in static folder
-        img.save("static/new.png", "PNG")
-        return render_template("qrcode.html")
+        img.save("static/codes/new.png", "PNG")
+        full_filename = os.path.join(app.config['CODES_FOLDER'], 'new.png')
+        return render_template("qrcode.html", qr = full_filename)
 
 
 
