@@ -416,6 +416,10 @@ body {
     font-size: 28px;
   }
 
+  #qrcode {
+    margin-top: 20%;
+  }
+
 }
 
 
