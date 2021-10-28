@@ -5,7 +5,14 @@
 {% endblock %}
 
 {% block main %}
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 
-<img alt="The Generated QR Code" src="{{ qr }}" >
+<div id="qrcode"></div>
+
+<script type="text/javascript">
+new QRCode(document.getElementById("qrcode"), "{{ qr_link }}");
+</script>
+
+<img alt="The Generated QR Code" src="static/new.png" >
 
 {% endblock %}
