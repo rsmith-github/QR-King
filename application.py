@@ -21,6 +21,9 @@ app = Flask(__name__)
 # Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
+# continue line 16
+app.config['UPLOAD_FOLDER'] = CODES_FOLDER
+
 # Ensure responses aren't cached
 @app.after_request
 def after_request(response):
