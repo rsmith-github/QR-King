@@ -399,12 +399,6 @@ body {
   text-decoration: none;
 }
 
-
-.qrcode {
-  display: flex;
-  justify-content: center;
-}
-
 .qrcode img {
   padding: 20px;
 }
