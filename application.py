@@ -1,5 +1,4 @@
 import os
-import qrcode
 
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
@@ -93,10 +92,12 @@ def mycodes():
     else:
         # store the link provided by user in variable
         link = db.execute("SELECT link FROM mycodes WHERE id = ? AND codename = ?", session["user_id"], request.form.get("codes"))
-        # make qrqode
-        img = qrcode.make(link)
-        # save qrcode as png in static folder
-        img.save("static/new.png", "PNG")
+
+        # # make qrqode
+        # img = qrcode.make(link)
+        # # save qrcode as png in static folder
+        # img.save("static/new.png", "PNG")
+
         return render_template("qrcode.html", qr_link = link)
 
 

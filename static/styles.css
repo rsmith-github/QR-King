@@ -400,6 +400,16 @@ body {
 }
 
 
+.qrcode {
+  display: flex;
+  justify-content: center;
+}
+
+.qrcode img {
+  padding: 20px;
+}
+
+
 /* mobile */
 @media (max-width: 790px) {
 
