@@ -10,8 +10,7 @@
 <div id="qrcode"></div>
 
 <script type="text/javascript">
-new QRCode(document.getElementById("qrcode"), {{ qr_link }});
-
+new QRCode(document.getElementById("qrcode"), decodeURI("{{ qr_link }}"));
 </script>
 
 {% endblock %}
